@@ -24,6 +24,10 @@
                     {{item.text }}
                 </li>
             </ul>
+            <div class="add">
+                <input type="text" v-model="newToDo" placeholder="Inserisci cose da fare">
+                <button @click="addNewToDo">Aggiungi</button>
+            </div>
         </div>
     </div>
 

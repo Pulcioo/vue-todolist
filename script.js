@@ -17,7 +17,8 @@ cliccando su di essa, il todo viene rimosso dalla lista.
 
 /////MILESTONE 3/////
 Predisporre un campo di input testuale e un pulsante "aggiungi":
-cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
+cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo,
+che quindi viene aggiunto alla lista dei todo esistenti.
 */
 
 const toDoList = [
@@ -44,11 +45,22 @@ const app = new Vue(
         el: '#vue-app',
         data: {
             toDoList,
+            newToDo: '',
         },
         methods: {
             toDoDone(index) {
                 this.toDoList.splice(index, 1);
-            }
+            },
+            addNewToDo() {
+                const object = {
+                    text: this.newToDo,
+                    done: false,
+                }
+                if (this.newToDo.length > 0 && !this.newToDo.includes(' ')) {
+                    this.toDoList.push(object)
+                }
+                this.newToDo = '';
+            },
         }
     }
 );

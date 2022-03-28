@@ -25,12 +25,33 @@ h1{
 
 ul{
     list-style-type: none;
+    border-bottom: 2px dashed black;
 }
 
 ul li{
     border: 2px dashed black;
     padding: 10px;
 }
+
+.add{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+}
+
+input{
+    font-size: 15px;
+    margin-right: 5px;
+    padding: 2px;
+    outline-color: black;
+}
+
+button{
+   padding: 5px 10px;
+   border-radius: 10px;
+}
+
 
 
 
