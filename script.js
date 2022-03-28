@@ -46,7 +46,9 @@ const app = new Vue(
             toDoList,
         },
         methods: {
-
+            toDoDone(index) {
+                this.toDoList.splice(index, 1);
+            }
         }
     }
 );
