@@ -11,6 +11,18 @@
 </head>
 
 <body>
+    <div id="vue-app">
+        <h1>To Do List</h1>
+        <div class="to-do-list">
+            <ul>
+                <li v-for="(item,index) in toDoList"
+                    :style="[toDoList[index].done === true ? {'text-decoration':'line-through'} : {'text-decoration':'none'} ]">
+                    {{item.text }}
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <script type="text/javascript" src="script.js"></script>
 </body>
 

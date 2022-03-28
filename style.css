@@ -5,3 +5,32 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+/* classi body */
+#vue-app{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1{
+    background-color: coral;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+.to-do-list{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    border: 2px dashed black;
+    padding: 10px;
+}
+
+
+
